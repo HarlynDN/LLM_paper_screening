@@ -152,5 +152,5 @@ cython_debug/
 #.idea/
 
 
-/.vscode
-/dev
+.vscode/
+dev/
