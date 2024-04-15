@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Named Entity Recognition Under Domain Shift via Metric Learning for Life Sciences",
+        "authors": "Hongyi Liu, Qingyun Wang, Payam Karisani, Heng Ji"
+    },
+    {
+        "title": "Text Diffusion Model with Encoder-Decoder Transformers for Sequence-to-Sequence Generation",
+        "authors": "Hongyi Yuan, Zheng Yuan, Chuanqi Tan, Fei Huang, Songfang Huang"
+    },
+    {
+        "title": "An Interactive Framework for Profiling News Media Sources",
+        "authors": "Nikhil Mehta, Dan Goldwasser"
+    },
+    {
+        "title": "Assessing Logical Puzzle Solving in Large Language Models: Insights from a Minesweeper Case Study",
+        "authors": "Yinghao Li, Haorui Wang, Chao Zhang"
+    },
+    {
+        "title": "TelME: Teacher-leading Multimodal Fusion Network for Emotion Recognition in Conversation",
+        "authors": "Taeyang Yun, Hyunkuk Lim, Jeonghwan Lee, Min Song"
+    }
+]

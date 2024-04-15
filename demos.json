@@ -1,0 +1,85 @@
+[
+    {
+        "input": {
+            "title": "Combo of Thinking and Observing for Outside-Knowledge VQA",
+            "authors": [
+                "Qingyi Si",
+                "Yuchen Mo",
+                "Zheng Lin",
+                "Huishan Ji",
+                "Weiping Wang"
+            ],
+            "url": "http://arxiv.org/abs/2305.06407v1",
+            "abstract": "Outside-knowledge visual question answering is a challenging task that\nrequires both the acquisition and the use of open-ended real-world knowledge.\nSome existing solutions draw external knowledge into the cross-modality space\nwhich overlooks the much vaster textual knowledge in natural-language space,\nwhile others transform the image into a text that further fuses with the\ntextual knowledge into the natural-language space and completely abandons the\nuse of visual features. In this paper, we are inspired to constrain the\ncross-modality space into the same space of natural-language space which makes\nthe visual features preserved directly, and the model still benefits from the\nvast knowledge in natural-language space. To this end, we propose a novel\nframework consisting of a multimodal encoder, a textual encoder and an answer\ndecoder. Such structure allows us to introduce more types of knowledge\nincluding explicit and implicit multimodal and textual knowledge. Extensive\nexperiments validate the superiority of the proposed method which outperforms\nthe state-of-the-art by 6.17% accuracy. We also conduct comprehensive ablations\nof each component, and systematically study the roles of varying types of\nknowledge. Codes and knowledge data can be found at\nhttps://github.com/PhoebusSi/Thinking-while-Observing."
+        },
+        "output": {
+            "summary": "本文提出了一种新型视觉问答框架，通过将跨模态空间限制在自然语言空间内，保留了视觉特征，并结合自然语言空间的丰富知识，通过多模态编码器、文本编码器和答案解码器的结构，引入显性和隐性的多模态及文本知识，实验显示该方法准确率提高6.17%，超越了现有技术。",
+            "reasoning": "本文研究的任务是开放域视觉问答，并不与情感智能直接相关，不属于给定的任何领域。",
+            "field": []
+        }
+    },
+    {
+        "input": {
+            "title": "An Interactive Framework for Profiling News Media Sources",
+            "authors": [
+                "Nikhil Mehta", 
+                "Dan Goldwasser"
+            ],
+            "url": "https://arxiv.org/abs/2309.07384",
+            "abstract": "The recent rise of social media has led to the spread of large amounts of fake and biased news, content published with the intent to sway beliefs. While detecting and profiling the sources that spread this news is important to maintain a healthy society, it is challenging for automated systems. In this paper, we propose an interactive framework for news media profiling. It combines the strengths of graph based news media profiling models, Pre-trained Large Language Models, and human insight to characterize the social context on social media. Experimental results show that with as little as 5 human interactions, our framework can rapidly detect fake and biased news media, even in the most challenging settings of emerging news events, where test data is unseen."
+        },
+        "output": {
+            "summary": "本论文提出了一个结合图模型、预训练语言模型和人类洞察的交互式新闻媒体画像框架，能有效识别社交媒体上的假新闻和偏见媒体，仅需5次人类互动，即便在新兴新闻事件中也表现出色。",
+            "reasoning": "本文研究的目的是检测社交媒体中的虚假新闻和偏见新闻，属于对社交媒体的分析。",
+            "field": [
+                "社交媒体分析"
+            ]
+        }
+    },
+    {
+        "input": {
+            "title": "MMC: Advancing Multimodal Chart Understanding with Large-scale Instruction Tuning",
+            "authors": [
+                "Fuxiao Liu", 
+                "Xiaoyang Wang", 
+                "Wenlin Yao", 
+                "Jianshu Chen", 
+                "Kaiqiang Song", 
+                "Sangwoo Cho", 
+                "Yaser Yacoob", 
+                "Dong Yu"
+            ],
+            "url": "https://arxiv.org/abs/2311.10774",
+            "abstract": "With the rapid development of large language models (LLMs) and their integration into large multimodal models (LMMs), there has been impressive progress in zero-shot completion of user-oriented vision-language tasks. However, a gap remains in the domain of chart image understanding due to the distinct abstract components in charts. To address this, we introduce a large-scale MultiModal Chart Instruction (MMC-Instruction) dataset comprising 600k instances supporting diverse tasks and chart types. Leveraging this data, we develop MultiModal Chart Assistant (MMCA), an LMM that achieves state-of-the-art performance on existing chart QA benchmarks. Recognizing the need for a comprehensive evaluation of LMM chart understanding, we also propose a MultiModal Chart Benchmark (MMC-Benchmark), a comprehensive human-annotated benchmark with 9 distinct tasks evaluating reasoning capabilities over charts. Extensive experiments on MMC-Benchmark reveal the limitations of existing LMMs on correctly interpreting charts, even for the most recent GPT-4V model. Our work provides an instruction-tuning methodology and benchmark to advance multimodal understanding of charts."
+        },
+        "output": {
+            "summary": "本文介绍了一个大规模多模态图表指令数据集MMC-Instruction，并基于此开发了MMCA模型，该模型在图表理解方面达到新高度。同时，提出了MMC-Benchmark基准，通过9项任务全面评估图表理解能力，揭示了即使先进如GPT-4V模型在图表解读上仍存在局限。研究为推进图表多模态理解提供了方法和基准。",
+            "reasoning": "本文研究的任务是多模态图表理解，并不与情感智能直接相关，不属于给定的任何领域。",
+            "field": []
+        }
+    },
+    {
+        "input": {
+            "title": "Improving Empathetic Response Generation by Recognizing Emotion Cause in Conversations",
+            "authors": [
+                "Jun Gao",
+                "Yuhan Liu",
+                "Haolin Deng",
+                "Wei Wang",
+                "Yu Cao",
+                "Jiachen Du",
+                "Ruifeng Xu"
+            ],
+            "url": "https://aclanthology.org/2021.findings-emnlp.70",
+            "abstract": "Current approaches to empathetic response generation focus on learning a model to predict an emotion label and generate a response based on this label and have achieved promising results. However, the emotion cause, an essential factor for empathetic responding, is ignored. The emotion cause is a stimulus for human emotions. Recognizing the emotion cause is helpful to better understand human emotions so as to generate more empathetic responses. To this end, we propose a novel framework that improves empathetic response generation by recognizing emotion cause in conversations. Specifically, an emotion reasoner is designed to predict a context emotion label and a sequence of emotion cause-oriented labels, which indicate whether the word is related to the emotion cause. Then we devise both hard and soft gated attention mechanisms to incorporate the emotion cause into response generation. Experiments show that incorporating emotion cause information improves the performance of the model on both emotion recognition and response generation."
+        },
+        "output": {
+            "summary": "这篇论文探讨了通过识别对话中的情绪原因来提升生成共情响应的方法。研究者们开发了一种模型，该模型能够分析对话内容，识别情绪触发因素，并据此生成更为贴切和富有同理心的回复，从而改善人机交互体验。",
+            "reasoning": "本文研究的任务是生成共情响应，属于情绪对话方向；此外，本文提出的方法包含对话中的情绪原因识别，因此也与情绪识别方向高度相关。",
+            "field": [
+                "情感对话",
+                "情绪识别"
+            ]
+        }
+    }
+]

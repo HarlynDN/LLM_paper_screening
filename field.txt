@@ -1,0 +1,6 @@
+情感分析（sentiment analysis）
+情绪识别（emotion recognition）
+论辩挖掘（argumentation mining）
+多模态情感（multimodal emotion）
+情感对话（empathetic conversation）
+社交媒体分析（social media analysis）
