@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--papers', type=str, default='papers.json',
+parser.add_argument('--paper', type=str,
                     help='path to the paper list, should be a json file containing a list dictionaries. Each dictionary should have a key "title" and an optional key "authors"')
 
 parser.add_argument('--inst', type=str, default='instruction.txt', help='path to the instruction file')
@@ -73,7 +73,7 @@ def run():
     instruction = instruction.replace('{FIELDS}', '\n'.join(target_fields))
     demos = json.load(open(args.demo))
 
-    # # Load model
+    # Load model
     tokenizer = AutoTokenizer.from_pretrained(args.model)
     model = AutoModelForCausalLM.from_pretrained(args.model, torch_dtype='auto', device_map=args.device)
 
