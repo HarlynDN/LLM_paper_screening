@@ -1,0 +1,519 @@
+[
+    {
+        "title": "An Interactive Framework for Profiling News Media Sources",
+        "authors": [
+            "Nikhil Mehta",
+            "Dan Goldwasser"
+        ],
+        "url": "http://arxiv.org/abs/2309.07384v1",
+        "summary": "本文提出了一种交互式新闻媒体画像框架，利用图模型、预训练语言模型和人类洞察力，以刻画社交媒体上的社交环境，实验证明该框架在检测假新闻和有偏见的新闻媒体方面表现优秀，仅需5次互动即可在包括新兴新闻事件在内的各种场景下工作。",
+        "field": [
+            "社交媒体分析"
+        ]
+    },
+    {
+        "title": "TelME: Teacher-leading Multimodal Fusion Network for Emotion Recognition in Conversation",
+        "authors": [
+            "Taeyang Yun",
+            "Hyunkuk Lim",
+            "Jeonghwan Lee",
+            "Min Song"
+        ],
+        "url": "http://arxiv.org/abs/2401.12987v2",
+        "summary": "本文提出了一种教师引导的多模态融合网络（TelME）用于对话中的情绪识别。该方法利用语言模型作为教师向非言语模态转移信息，优化弱模态的有效性，通过学生网络支持教师的变换融合策略结合多模态特征，实现在多说话人对话数据集MELD上的最先进的性能。",
+        "field": [
+            "情感对话",
+            "多模态情感",
+            "情绪识别"
+        ]
+    },
+    {
+        "title": "Large Language Models Help Humans Verify Truthfulness -- Except When They Are Convincingly Wrong",
+        "authors": [
+            "Chenglei Si",
+            "Navita Goyal",
+            "Sherry Tongshuang Wu",
+            "Chen Zhao",
+            "Shi Feng",
+            "Hal Daumé III",
+            "Jordan Boyd-Graber"
+        ],
+        "url": "http://arxiv.org/abs/2310.12558v2",
+        "summary": "本文对比了大型语言模型和搜索引擎在帮助用户事实核查信息方面的表现，发现虽然使用语言模型解释的用户在效率上更高，但当解释错误时过度依赖模型。通过提供对比性解释可以减轻这种过度依赖，但无法显著优于搜索引擎，且两者结合并未产生互补效果。",
+        "field": [
+            "社交媒体分析"
+        ]
+    },
+    {
+        "title": "Toward Informal Language Processing: Knowledge of Slang in Large Language Models",
+        "authors": [
+            "Zhewei Sun",
+            "Qian Hu",
+            "Rahul Gupta",
+            "Richard Zemel",
+            "Yang Xu"
+        ],
+        "url": "http://arxiv.org/abs/2404.02323v1",
+        "summary": "本研究构建了一个基于电影字幕的俚语处理评估数据集，用于检测和识别俚语来源，发现即使是零样本设置下表现良好的大模型，在处理俚语时也有待改进，而较小的模型经过微调后可以达到类似性能，表明数据集对于理解模型在处理非正式语言时的能力具有重要作用。",
+        "field": [
+            "社交媒体分析"
+        ]
+    },
+    {
+        "title": "DialogCC: An Automated Pipeline for Creating High-Quality Multi-Modal Dialogue Dataset",
+        "authors": [
+            "Young-Jun Lee",
+            "Byungsoo Ko",
+            "Han-Gyu Kim",
+            "Jonghwan Hyeon",
+            "Ho-Jin Choi"
+        ],
+        "url": "http://arxiv.org/abs/2212.04119v2",
+        "summary": "本文提出了一种自动化构建高质量多模态对话数据集的管道，利用GPT-4推断潜在的图片分享时刻，通过CLIP相似度保持图片与话语的一致性，构建了DialogCC数据集，经人类评价，其质量和多样性优于现有数据集，提升多模态对话模型的泛化性能。",
+        "field": [
+            "多模态情感"
+        ]
+    },
+    {
+        "title": "The Colorful Future of LLMs: Evaluating and Improving LLMs as Emotional Supporters for Queer Youth",
+        "authors": [
+            "Shir Lissak",
+            "Nitay Calderon",
+            "Geva Shenkman",
+            "Yaakov Ophir",
+            "Eyal Fruchter",
+            "Anat Brunstein Klomek",
+            "Roi Reichart"
+        ],
+        "url": "http://arxiv.org/abs/2402.11886v1",
+        "summary": "本文旨在探索大型语言模型在为LGBTQ+青少年提供情感支持方面的潜力。通过分析模型与LGBTQ+相关话题的互动，发现虽然模型支持性较强，但缺乏个性化的同情和可靠建议。通过定制提示可以改善性能，建议构建主动寻求用户上下文的敏感、个性化、同情和可靠回应的LGBTQ+支持者模型。",
+        "field": [
+            "情感分析",
+            "情绪识别",
+            "情感对话"
+        ]
+    },
+    {
+        "title": "P^3SUM: Preserving Author's Perspective in News Summarization with Diffusion Language Models",
+        "authors": [
+            "Yuhan Liu",
+            "Shangbin Feng",
+            "Xiaochuang Han",
+            "Vidhisha Balachandran",
+            "Chan Young Park",
+            "Sachin Kumar",
+            "Yulia Tsvetkov"
+        ],
+        "url": "http://arxiv.org/abs/2311.09741v2",
+        "summary": "本文研究了如何在新闻摘要生成中保持作者的观点，提出了一种基于扩散语言模型的控制策略P^3SUM，通过政治立场分类器在解码过程中持续评估生成摘要的政治倾向，确保其与原文保持一致。实验证明P^3SUM在立场保持成功率上优于现有系统高达13.7%。",
+        "field": [
+            "情感分析",
+            "情绪识别"
+        ]
+    },
+    {
+        "title": "A School Student Essay Corpus for Analyzing Interactions of Argumentative Structure and Quality",
+        "authors": [
+            "Maja Stahl",
+            "Nadine Michel",
+            "Sebastian Kilsbach",
+            "Julian Schmidtke",
+            "Sara Rezat",
+            "Henning Wachsmuth"
+        ],
+        "url": "http://arxiv.org/abs/2404.02529v1",
+        "summary": "本文构建了一个包含1320篇学生作文的德语文本库，这些作文按年龄分组，每篇都被人工标注了论证结构和质量信息，用于研究论证结构和写作质量之间的关系，以支持计算机辅助论证写作。",
+        "field": [
+            "论辩挖掘"
+        ]
+    },
+    {
+        "title": "Complex Claim Verification with Evidence Retrieved in the Wild",
+        "authors": [
+            "Jifan Chen",
+            "Grace Kim",
+            "Aniruddh Sriram",
+            "Greg Durrett",
+            "Eunsol Choi"
+        ],
+        "url": "http://arxiv.org/abs/2305.11859v1",
+        "summary": "本文提出了一种自动事实核查管道，通过在互联网上检索实时证据来验证复杂声明。该系统包括五个步骤：声明分解、原始文档检索、细粒度证据检索、关注声明的摘要生成和真实性判断。实验表明，该系统生成的综合证据有助于真实性判断。",
+        "field": [
+            "社交媒体分析",
+            "论辩挖掘"
+        ]
+    },
+    {
+        "title": "Exploring Cross-Cultural Differences in English Hate Speech Annotations: From Dataset Construction to Analysis",
+        "authors": [
+            "Nayeon Lee",
+            "Chani Jung",
+            "Junho Myung",
+            "Jiho Jin",
+            "Jose Camacho-Collados",
+            "Juho Kim",
+            "Alice Oh"
+        ],
+        "url": "http://arxiv.org/abs/2308.16705v3",
+        "summary": "本研究构建了名为CREHate的跨文化英语仇恨言论数据集，通过调查获取文化仇恨关键词，收集北美、澳大利亚、英国、新加坡和南非等国家的帖子，并从这些国家以及美国收集标注，揭示了各国在仇恨言论标注上的显著差异，分析了产生差异的原因并评估了大模型的表现。",
+        "field": [
+            "情感分析"
+        ]
+    },
+    {
+        "title": "iACOS: Advancing Implicit Sentiment Extraction with Informative and Adaptive Negative Examples",
+        "authors": [
+            "Xiancai Xu",
+            "Jia-Dong Zhang",
+            "Lei Xiong",
+            "Zhishang Liu"
+        ],
+        "url": "http://arxiv.org/abs/2311.03896v1",
+        "summary": "本文提出了一种新的方法iACOS，用于从文本中抽取隐含的四元组：观点、类别、情感和意见。通过添加隐含标记、序列标注模型和多标签分类器，结合信息性和适应性负例，iACOS在两个公共基准数据集上显著优于其他四元组抽取基线。",
+        "field": [
+            "情感分析"
+        ]
+    },
+    {
+        "title": "Flames: Benchmarking Value Alignment of LLMs in Chinese",
+        "authors": [
+            "Kexin Huang",
+            "Xiangyang Liu",
+            "Qianyu Guo",
+            "Tianxiang Sun",
+            "Jiawei Sun",
+            "Yaru Wang",
+            "Zeyang Zhou",
+            "Yixu Wang",
+            "Yan Teng",
+            "Xipeng Qiu",
+            "Yingchun Wang",
+            "Dahua Lin"
+        ],
+        "url": "http://arxiv.org/abs/2311.06899v3",
+        "summary": "本文提出了一个名为Flames的价值一致性基准，用于评估大型语言模型（LLMs）对中国特定价值观的符合程度。通过对17个主流LLMs进行测试，发现它们在安全和公平性方面的表现较差，凸显了LLMs需要进一步改进以实现真正无害化。Flames基准的复杂度远超现有基准，为当前LLMs设定了新的挑战。",
+        "field": [
+            "社交媒体分析"
+        ]
+    },
+    {
+        "title": "Sentence-level Media Bias Analysis with Event Relation Graph",
+        "authors": [
+            "Yuanyuan Lei",
+            "Ruihong Huang"
+        ],
+        "url": "http://arxiv.org/abs/2404.01722v1",
+        "summary": "本文研究了如何通过构建事件关系图来识别新闻报道中的句子级媒体偏见。作者设计了一个包含四种常见事件关系的事件关系图，并利用软标签和硬标签的方式将事件及其关系知识注入到语言模型中，以识别具有偏见的句子。",
+        "field": [
+            "社交媒体分析",
+            "论辩挖掘"
+        ]
+    },
+    {
+        "title": "CASA: Causality-driven Argument Sufficiency Assessment",
+        "authors": [
+            "Xiao Liu",
+            "Yansong Feng",
+            "Kai-Wei Chang"
+        ],
+        "url": "http://arxiv.org/abs/2401.05249v2",
+        "summary": "本文提出了一种零样本的因果驱动的论证充分性评估框架CASA，它利用大型语言模型生成与前提和结论相矛盾的上下文，并通过注入前提事件进行修正，以此估算论证的充分性。实验表明，CASA能准确识别不足的论证。",
+        "field": [
+            "论辩挖掘"
+        ]
+    },
+    {
+        "title": "Event Detection from Social Media for Epidemic Prediction",
+        "authors": [
+            "Tanmay Parekh",
+            "Anh Mac",
+            "Jiarui Yu",
+            "Yuxuan Dong",
+            "Syed Shahriar",
+            "Bonnie Liu",
+            "Eric Yang",
+            "Kuan-Hao Huang",
+            "Wei Wang",
+            "Nanyun Peng",
+            "Kai-Wei Chang"
+        ],
+        "url": "http://arxiv.org/abs/2404.01679v1",
+        "summary": "本研究利用社交网络平台的数据，开发出一种识别与传染病相关的社会事件的方法，用于预测未来可能发生的疫情，实验表明该方法能提前4至9周预警猴痘等传染病的爆发。",
+        "field": [
+            "社交媒体分析"
+        ]
+    },
+    {
+        "title": "DialogBench: Evaluating LLMs as Human-like Dialogue Systems",
+        "authors": [
+            "Jiao Ou",
+            "Junda Lu",
+            "Che Liu",
+            "Yihong Tang",
+            "Fuzheng Zhang",
+            "Di Zhang",
+            "Kun Gai"
+        ],
+        "url": "http://arxiv.org/abs/2311.01677v2",
+        "summary": "本文提出了一种名为DialogBench的对话评估基准，用于评估大型语言模型作为类似人类的对话系统的能力，包括12个对话任务，通过提示GPT-4生成测试实例，发现尽管指示调优一定程度上提升了LLM的人性化程度，但大多数模型仍有很大改进空间。",
+        "field": [
+            "情感对话"
+        ]
+    },
+
+    {
+        "title": "\"You are an expert annotator\": Automatic Best-Worst-Scaling Annotations for Emotion Intensity Modeling",
+        "authors": [
+            "Christopher Bagdon",
+            "Prathamesh Karmalker",
+            "Harsha Gurulingappa",
+            "Roman Klinger"
+        ],
+        "url": "http://arxiv.org/abs/2403.17612v1",
+        "summary": "本文研究了如何利用大型语言模型自动标记情绪强度数据集，以解决创建新任务或领域模型时的标注瓶颈问题。实验发现，在比较标注方法中，最佳-最差尺度（Best-Worst Scaling）具有最高的可靠性。",
+        "field": [
+            "情感分析"
+        ]
+    },
+
+    {
+        "title": "FAMuS: Frames Across Multiple Sources",
+        "authors": [
+            "Siddharth Vashishtha",
+            "Alexander Martin",
+            "William Gantt",
+            "Benjamin Van Durme",
+            "Aaron Steven White"
+        ],
+        "url": "http://arxiv.org/abs/2311.05601v1",
+        "summary": "本文提出了FAMuS数据集，其中包含维基百科报道事件的段落和对应事件的来源文章，两者都使用框架网进行事件和跨句子论元的标注，用于支持事件理解的两个关键任务：源验证和跨文档论元提取。",
+        "field": [
+            "论辩挖掘"
+        ]
+    },
+    {
+        "title": "IndiBias: A Benchmark Dataset to Measure Social Biases in Language Models for Indian Context",
+        "authors": [
+            "Nihar Ranjan Sahoo",
+            "Pranamya Prashant Kulkarni",
+            "Narjis Asad",
+            "Arif Ahmad",
+            "Tanu Goyal",
+            "Aparna Garimella",
+            "Pushpak Bhattacharyya"
+        ],
+        "url": "http://arxiv.org/abs/2403.20147v2",
+        "summary": "本文提出了一种名为IndiBias的基准数据集，用于衡量印度语境下大型语言模型的社会偏见。通过对CrowS-Pairs数据集进行筛选和翻译，以及利用ChatGPT和InstructGPT等模型生成具有印度社会特色的偏见和刻板印象，构建了一个包含性别、宗教、种姓、年龄、地区、外貌和职业等多维度偏见的评估工具。",
+        "field": [
+            "情感分析"
+        ]
+    },
+    {
+        "title": "MultiParaDetox: Extending Text Detoxification with Parallel Data to New Languages",
+        "authors": [
+            "Daryna Dementieva",
+            "Nikolay Babakov",
+            "Alexander Panchenko"
+        ],
+        "url": "http://arxiv.org/abs/2404.02037v1",
+        "summary": "本文提出 MultiParaDetox，一种用于多语言文本去毒化平行数据收集的自动化管道。通过对比不同去毒化模型，如无监督基线、大型语言模型和针对平行语料库的微调模型，证明了平行语料库对于构建任何语言的顶级去毒化模型的重要性。",
+        "field": [
+            "情感分析"
+        ]
+    },
+    {
+        "title": "Contextualizing Argument Quality Assessment with Relevant Knowledge",
+        "authors": [
+            "Darshan Deshpande",
+            "Zhivar Sourati",
+            "Filip Ilievski",
+            "Fred Morstatter"
+        ],
+        "url": "http://arxiv.org/abs/2305.12280v2",
+        "summary": "论文提出了一种名为SPARK的新方法，该方法利用相关知识对论点质量进行上下文化评分。通过使用大型语言模型提供反馈、推断隐藏假设、生成相似质量的论点或提供反驳论点，SPARK采用双编码器Transformer架构，使原始论点与其增强版本能够共同考虑。实验结果表明，无论在领域内还是零样本设置下，SPARK在多种指标上都优于现有技术。",
+        "field": [
+            "论辩挖掘"
+        ]
+    },
+    {
+        "title": "Language Models (Mostly) Do Not Consider Emotion Triggers When Predicting Emotion",
+        "authors": [
+            "Smriti Singh",
+            "Cornelia Caragea",
+            "Junyi Jessy Li"
+        ],
+        "url": "http://arxiv.org/abs/2311.09602v2",
+        "summary": "本文通过对比分析大型语言模型和微调模型在预测情绪时所关注的特征，发现情绪触发因素在情绪预测模型中并未被广泛视为重要特征，这与人类标注的情绪触发因素之间存在显著差异。",
+        "field": [
+            "情感分析",
+            "情绪识别"
+        ]
+    },
+    {
+        "title": "InstructABSA: Instruction Learning for Aspect Based Sentiment Analysis",
+        "authors": [
+            "Kevin Scaria",
+            "Himanshu Gupta",
+            "Siddharth Goyal",
+            "Saurabh Arjun Sawant",
+            "Swaroop Mishra",
+            "Chitta Baral"
+        ],
+        "url": "http://arxiv.org/abs/2302.08624v6",
+        "summary": "本文提出了InstructABSA，一种面向基于方面的观点分析（ABSA）子任务的指令学习范式。该方法在训练样本中引入正向、负向和中性示例，并通过Tk-Instruct对模型进行指令微调，显著提高了性能。在SemEval 2014, 15, 16数据集上的实验结果表明，InstructABSA在术语提取（ATE）、观点分类（ATSC）和观点对提取（ASPE）等子任务上优于先前的最优技术（SOTA）。特别是，在Rest14 ATE子任务上，InstructABSA的性能提高了5.69%，Rest15 ATSC子任务上提高了9.59%，Lapt14 AOPE子任务上提高了3.37%，甚至超过了7倍大的模型。",
+        "field": [
+            "情感分析"
+        ]
+    },
+    {
+        "title": "Improved Text Emotion Prediction Using Combined Valence and Arousal Ordinal Classification",
+        "authors": [
+            "Michael Mitsios",
+            "Georgios Vamvoukakis",
+            "Georgia Maniati",
+            "Nikolaos Ellinas",
+            "Georgios Dimitriou",
+            "Konstantinos Markopoulos",
+            "Panos Kakoulidis",
+            "Alexandra Vioni",
+            "Myrsini Christidou",
+            "Junkwang Oh",
+            "Gunu Jho",
+            "Inchul Hwang",
+            "Georgios Vardaxoglou",
+            "Aimilios Chalamandaris",
+            "Pirros Tsiakoulis",
+            "Spyros Raptis"
+        ],
+        "url": "http://arxiv.org/abs/2404.01805v1",
+        "summary": "本文提出了一种基于文本的情绪分类方法，通过区分不同情绪之间的相似性和差异性，提高了情绪识别的准确性。首先，作者使用基于Transformer的模型进行标准情绪分类并取得领先性能。然后，他们将情绪标签问题从传统的分类模型转换为顺序分类模型，根据情绪的愉悦度水平对离散情绪进行排序。最后，他们提出一种方法，在二维情绪空间中进行同时考虑愉悦度和唤醒度的顺序分类。结果显示，新方法在保持高情感预测准确率的同时，显著降低了误分类时的误差程度。",
+        "field": [
+            "情感分析",
+            "多模态情感"
+        ]
+    },
+    {
+        "title": "SMILE: Multimodal Dataset for Understanding Laughter in Video with Language Models",
+        "authors": [
+            "Lee Hyun",
+            "Kim Sung-Bin",
+            "Seungju Han",
+            "Youngjae Yu",
+            "Tae-Hyun Oh"
+        ],
+        "url": "http://arxiv.org/abs/2312.09818v2",
+        "summary": "本文提出了一种新的机器理解任务——视频笑声推理，即解释人们为何在特定视频中笑，并为此构建了SMILE数据集，包含视频片段和笑声原因的文本描述。实验表明，利用大语言模型进行文本视频表示，可以生成合理的笑声解释。",
+        "field": [
+            "情绪识别"
+        ]
+    },
+    {
+        "title": "Adapting Fake News Detection to the Era of Large Language Models",
+        "authors": [
+            "Jinyan Su",
+            "Claire Cardie",
+            "Preslav Nakov"
+        ],
+        "url": "http://arxiv.org/abs/2311.04917v1",
+        "summary": "随着大模型和人工智能内容创作的普及，信息传播领域发生了转变，真假新闻交织，鉴别新闻真实性成为难题。本文研究了机器生成的真假新闻与人类创作的真假新闻之间的关系，评估了不同场景下训练的假新闻检测器的表现，发现仅在人类文章上训练的检测器可以较好地识别机器生成的假新闻，但反之则不然。",
+        "field": [
+            "社交媒体分析"
+        ]
+    },
+    {
+        "title": "HateModerate: Testing Hate Speech Detectors against Content Moderation Policies",
+        "authors": [
+            "Jiangrui Zheng",
+            "Xueqing Liu",
+            "Guanqun Yang",
+            "Mirazul Haque",
+            "Xing Qian",
+            "Ravishka Rathnasuriya",
+            "Wei Yang",
+            "Girish Budhrani"
+        ],
+        "url": "http://arxiv.org/abs/2307.12418v2",
+        "summary": "本论文构建了HateModerate数据集，用于测试自动内容审查器如何遵循社交媒体的内容政策。通过人工标注和GPT参与的六步标注流程，创建了一系列符合Facebook 41条仇恨言论政策的测试套件。实验证明，当前的仇恨言论检测器在遵循这些政策上存在大量不足，而利用HateModerate增强的模型在政策遵循性上有显著提升。",
+        "field": [
+            "社交媒体分析"
+        ]
+    },
+    {
+        "title": "Reason from Fallacy: Enhancing Large Language Models' Logical Reasoning through Logical Fallacy Understanding",
+        "authors": [
+            "Yanda Li",
+            "Dixuan Wang",
+            "Jiaqing Liang",
+            "Guochao Jiang",
+            "Qianyu He",
+            "Yanghua Xiao",
+            "Deqing Yang"
+        ],
+        "url": "http://arxiv.org/abs/2404.04293v1",
+        "summary": "本文指出大型语言模型在逻辑推理方面的不足，尤其是对逻辑谬误理解的欠缺。为此，作者提出了五个基于认知维度的LFU任务，并构建了LFUD数据集来评估和提升语言模型的逻辑谬误理解能力，进而改进其逻辑推理表现。",
+        "field": [
+            "论辩挖掘"
+        ]
+    },
+    {
+        "title": "PersonaLLM: Investigating the Ability of Large Language Models to Express Personality Traits",
+        "authors": [
+            "Hang Jiang",
+            "Xiajie Zhang",
+            "Xubo Cao",
+            "Cynthia Breazeal",
+            "Deb Roy",
+            "Jad Kabbara"
+        ],
+        "url": "http://arxiv.org/abs/2305.02547v5",
+        "summary": "本文研究了大型语言模型在表达个性特征方面的表现。通过模拟基于Big Five人格模型的LLM（大型语言模型）人格，让它们完成人格测试和故事写作任务，发现LLM能生成与其指定人格类型一致的内容，且人类能够根据文本识别出部分人格特质。",
+        "field": [
+            "情感分析",
+            "情绪识别"
+        ]
+    },
+    {
+        "title": "Sentiment Analysis in the Era of Large Language Models: A Reality Check",
+        "authors": [
+            "Wenxuan Zhang",
+            "Yue Deng",
+            "Bing Liu",
+            "Sinno Jialin Pan",
+            "Lidong Bing"
+        ],
+        "url": "http://arxiv.org/abs/2305.15005v1",
+        "summary": "本文研究了大型语言模型在情感分析任务上的表现，从传统的情感分类到基于观点的情感分析和主观文本的多维度分析，评估了13个任务和26个数据集，发现大型语言模型在简单任务上表现良好，但在需要深度理解或结构化情感信息的复杂任务中表现较差，但在少量样本学习中优于小规模模型，提出新的评估基准SentiEval。",
+        "field": [
+            "情感分析"
+        ]
+    },
+    {
+        "title": "Think Before You Speak: Cultivating Communication Skills of Large Language Models via Inner Monologue",
+        "authors": [
+            "Junkai Zhou",
+            "Liang Pang",
+            "Huawei Shen",
+            "Xueqi Cheng"
+        ],
+        "url": "http://arxiv.org/abs/2311.07445v2",
+        "summary": "本文针对大模型在对话系统中的应用，提出利用内心独白的方式培养其交流技巧，如话题转换、主动提问、概念引导、同理心和总结等，以增强其人类化和主动性，提升用户参与度。构建了Cskills基准用于评估这些交流技能，实验证明所提策略有效提升模型性能。",
+        "field": [
+            "情感对话"
+        ]
+    },
+    {
+        "title": "Emotion-Anchored Contrastive Learning Framework for Emotion Recognition in Conversation",
+        "authors": [
+            "Fangxu Yu",
+            "Junjie Guo",
+            "Zhen Wu",
+            "Xinyu Dai"
+        ],
+        "url": "http://arxiv.org/abs/2403.20289v1",
+        "summary": "本文提出了一种基于情绪锚点的对比学习框架(EACL)，用于解决对话情感识别任务中相似情绪区分度低的问题。通过利用标签编码作为锚点引导表述学习，并设计辅助损失确保相似情绪锚点的有效分离，EACL能够生成更易于区分的表述，从而改进了情感分类性能。",
+        "field": [
+            "情感对话",
+            "情绪识别"
+        ]
+    }
+]

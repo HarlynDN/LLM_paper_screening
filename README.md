@@ -18,6 +18,7 @@ Several demonstrations will be provided in context to elicit the reasoning.
 ## Requirements
 ```txt
 transformers>=4.37.0
+accelerate
 arxiv
 ```
 
