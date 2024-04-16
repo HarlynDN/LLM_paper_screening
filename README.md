@@ -1,6 +1,6 @@
 # LLM Paper Screening
 
-Given a list of papers, this script uses LLMs to automatically screen papers for relevance to given field(s). 
+Given a list of papers, this script uses LLMs to automatically screen papers that are relevant to the given field(s). 
 
 The prompt and LLM output are in Chinese.
 
@@ -10,9 +10,9 @@ For each paper in the given list:
 2. If found, obtain the abstract of the paper, and prompt LLM to do chain-of-thoughts reasoning:
     - briefly summarize the paper
     - reason about the paper's relevance to the given field(s)
-    - return a list containing all the relevant fields
+    - return a subset of the given fields that are relevant to the paper
 
-Serveral demonstrations will be provided in context to elicit the reasoning.
+Several demonstrations will be provided in context to elicit the reasoning.
 
 
 ## Requirements
@@ -32,7 +32,7 @@ python run.py \
     --device cuda
 ```
 
-`--paper` should be a json file containing a list dictionaries. Each dictionary should have a key "title" and an optional key "authors". These information will be used to search the paper on arxiv.
+`--paper` should be a json file containing a list of dictionaries. Each dictionary should have a key "title" and an optional key "authors". This information will be used to search the paper on arxiv.
 
 `--field` should be a text file containing field(s) of interest. Each field should be on a separate line.
 
