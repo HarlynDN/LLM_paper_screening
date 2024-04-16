@@ -1,4 +1,5 @@
 import json
+import os
 import logging
 from typing import Dict, List
 import argparse
@@ -43,9 +44,13 @@ def search(title: str, authors: list = []):
         query=query, max_results=10, sort_by=arxiv.SortCriterion.Relevance
     )
     results = client.results(search)
-    for res in results:
-        if match(res, title, authors):
-            return {'title': res.title, 'authors': [a.name for a in res.authors], 'url': res.entry_id, 'abstract': res.summary}
+    try:
+        for res in results:
+            if match(res, title, authors):
+                return {'title': res.title, 'authors': [a.name for a in res.authors], 'url': res.entry_id, 'abstract': res.summary}
+    except arxiv.UnexpectedEmptyPageError:
+        logger.error(f"UnexpectedEmptyPageError: {title}")
+
     return NOT_FOUND
 
 
@@ -60,6 +65,10 @@ def make_conversation(instruction: str, demos: List[Dict]=[], sample: Dict=None)
         conversations.append({'role': 'user', 'content': _format(sample)})
     return conversations
 
+def update_log(log, path='output_log.json'):
+    with open(path, 'w') as f:
+        json.dump(log, f, indent=4, ensure_ascii=False)
+
 
 def run():
     args = parser.parse_args()
@@ -67,7 +76,7 @@ def run():
         print(f"{k}: {args.__dict__[k]}")
 
     # Load data
-    papers = json.load(open(args.papers))
+    papers = json.load(open(args.paper))
     target_fields = [f.strip() for f in open(args.field).readlines() if f.strip()]
     instruction = open(args.inst).read()
     instruction = instruction.replace('{FIELDS}', '\n'.join(target_fields))
@@ -78,16 +87,29 @@ def run():
     model = AutoModelForCausalLM.from_pretrained(args.model, torch_dtype='auto', device_map=args.device)
 
     # print prompt
+    logger.info(f"******** DEMONSTRATIONS ********")
     for msg in  make_conversation(instruction, demos):
         logger.info(f"===== {msg['role']} =====")
         logger.info(msg['content'])
+    logger.info(f"********************************")
 
-    paper_not_found_cnt = 0
-    format_err_cnt = 0
-    raw_outputs = []
-    for paper in tqdm(papers):
-        logger.info(f"Paper not found so far: {paper_not_found_cnt}")
-        logger.info(f"Format error so far: {format_err_cnt}\n")
+    output_log = {
+        'args': args.__dict__,
+        'paper_not_found_cnt': 0,
+        'format_err_cnt': 0,
+        'total_cnt': 0,
+        'outputs':[]
+    }
+    for i, paper in tqdm(enumerate(papers), total=len(papers)):
+        if os.path.exists('output_log.json'):
+            output_log = json.load(open('output_log.json'))
+        if i < output_log['total_cnt']:
+            continue
+        output_log['total_cnt'] += 1
+
+        logger.info(f"Paper not found so far: {output_log['paper_not_found_cnt']}")
+        logger.info(f"Format error so far: {output_log['format_err_cnt']}\n")
+    
         logger.info(f"===== Paper: {paper['title']} =====")
         # search paper on arxiv
         if 'authors' in paper.keys():
@@ -97,8 +119,10 @@ def run():
         res = search(paper['title'], authors)
         if res == NOT_FOUND:
             logger.info(f"Paper not found!")
-            paper_not_found_cnt += 1
+            output_log['paper_not_found_cnt'] += 1
+            update_log(output_log)
             continue
+
         logger.info(f"Abstract:\n{res['abstract']}\n\n")
         # prepare prompt
         converations = make_conversation(instruction, demos, res)
@@ -124,11 +148,12 @@ def run():
             output = json.loads(generation)
             assert 'field' in output.keys() and 'summary' in output.keys()
         except:
-            format_err_cnt += 1
             logger.error(f"Format error!")
+            output_log['format_err_cnt'] += 1
+            update_log(output_log)
             continue
 
-        raw_outputs.append({
+        output_log['outputs'].append({
             'title': res['title'],
             'authors': res['authors'],
             'url': res['url'],
@@ -138,27 +163,26 @@ def run():
             'field': output['field'] 
         })
 
-    
-    logger.info(f"Paper not found: {paper_not_found_cnt}/{len(papers)}")
-    logger.info(f"Format error: {format_err_cnt}/{len(papers)}")
+        update_log(output_log)
 
-    # save raw_outputs
-    with open('raw_outputs.json', 'w') as f:
-        json.dump(raw_outputs, f, indent=4, ensure_ascii=False)
+    logger.info(f"****** Finished ******")
 
-    filtered_outputs = []
-    for item in raw_outputs:
+    logger.info(f"Paper not found: {output_log['paper_not_found_cnt']}/{len(papers)}")
+    logger.info(f"Format error: {output_log['format_err_cnt']}/{len(papers)}")
+
+
+    final_outputs = []
+    for item in output_log['outputs']:
         valid_target_fields = [d for d in item['field'] if is_valid_field(d)]
         if valid_target_fields:
             item['field'] = valid_target_fields
             del item['abstract']
             del item['reasoning']
-            filtered_outputs.append(item)
-    logger.info(f"Filtered outputs: {len(filtered_outputs)}")
+            final_outputs.append(item)
+    logger.info(f"Final outputs: {len(final_outputs)}")
 
-    # save filtered_outputs
-    with open('filtered_outputs.json', 'w') as f:
-        json.dump(filtered_outputs, f, indent=4, ensure_ascii=False)
+    with open('outputs.json', 'w') as f:
+        json.dump(final_outputs, f, indent=4, ensure_ascii=False)
 
 if __name__ == '__main__':
     run()
