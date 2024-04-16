@@ -65,7 +65,9 @@ def make_conversation(instruction: str, demos: List[Dict]=[], sample: Dict=None)
         conversations.append({'role': 'user', 'content': _format(sample)})
     return conversations
 
-def update_log(log, path='output_log.json'):
+def update_log(log, path='output/output_log.json'):
+    if not os.path.exists(os.path.dirname(path)):
+        os.makedirs(os.path.dirname(path))
     with open(path, 'w') as f:
         json.dump(log, f, indent=4, ensure_ascii=False)
 
@@ -181,7 +183,7 @@ def run():
             final_outputs.append(item)
     logger.info(f"Final outputs: {len(final_outputs)}")
 
-    with open('outputs.json', 'w') as f:
+    with open('output/outputs.json', 'w') as f:
         json.dump(final_outputs, f, indent=4, ensure_ascii=False)
 
 if __name__ == '__main__':
